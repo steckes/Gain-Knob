@@ -11,11 +11,11 @@ name = "gain_knob"
 crate-type = ["cdylib"]
 
 [build-dependencies]
-slint-build = "=1.15.1"
+slint-build = "=1.16.1"
 
 [dependencies]
 nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", rev = "28b149ec4d62757d0b448809148a0c3ca6e09a95" }
 nih_plug_xtask = { git = "https://github.com/robbert-vdh/nih-plug.git", rev = "28b149ec4d62757d0b448809148a0c3ca6e09a95" }
-nih_plug_slint = { git = "https://github.com/steckes/nih-plug-slint", rev = "e0977a98af4c2793532706e7636b0555bbe8e3d7" }
-slint = { version = "=1.15.1", default-features = false, features = ["std", "renderer-femtovg", "raw-window-handle-06", "compat-1-2"] }
+nih_plug_slint = { git = "https://github.com/steckes/nih-plug-slint", rev = "37992272a906972debc8f7de566b574fabe9f7ff" }
+slint = { version = "=1.16.1", default-features = false, features = ["std", "renderer-femtovg", "raw-window-handle-06", "compat-1-2"] }
 serde = { version = "1.0", features = ["derive"] }
