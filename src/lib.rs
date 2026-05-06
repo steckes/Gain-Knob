@@ -127,8 +127,8 @@ impl Plugin for GainKnob {
                         let component = window_handler.component();
 
                         // Pass the keyboard_input_is_enabled state to the window handler
-                        window_handler.set_keyboard_input_is_enabled(
-                            component.get_keyboard_input_is_enabled(),
+                        window_handler.set_prevent_key_event_propagation(
+                            component.get_prevent_key_event_propagation(),
                         );
 
                         // Plugin -> UI: sync gain knob position

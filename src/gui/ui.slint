@@ -15,8 +15,8 @@ export component AppWindow inherits Window {
     // dB display string pushed from Rust each frame
     in-out property <string> gain-db: "0.0 dB";
 
-    // Enable keyboard input if you want the plugin to consume the key events
-    in-out property <bool> keyboard_input_is_enabled: KeyboardState.keyboard_input_is_enabled;
+    // Prevent key events from reaching the host
+    in-out property <bool> prevent_key_event_propagation: KeyboardState.prevent_key_event_propagation;
 
     callback gain-changed(float);
     callback gain-changed-from-string(string);
