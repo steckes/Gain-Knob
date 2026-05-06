@@ -25,7 +25,7 @@ gain-knob/
 │   └── gui/
 │       ├── mod.rs      # Slint module include
 │       ├── ui.slint    # Main window layout
-│       └── DSL/
+│       └── components/
 │           └── knob.slint  # Reusable knob component
 ├── build.rs            # Compiles Slint UI
 └── xtask/              # NIH-plug bundler
