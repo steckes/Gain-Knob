@@ -23,14 +23,7 @@ export component AppWindow inherits Window {
     callback gain-begin-drag();
     callback gain-end-drag();
 
-    property <float> scale: 1.0;
-
-    changed width => {
-        self.scale = min(self.width / 300px, self.height / 360px);
-    }
-    changed height => {
-        self.scale = min(self.width / 300px, self.height / 360px);
-    }
+    in property <float> scale: 1.0;
 
     background: #141414;
 

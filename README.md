@@ -11,7 +11,6 @@ A single-knob gain plugin (-60 dB to +6 dB) with a clean, GPU-accelerated UI bui
 ## Building
 
 ```sh
-cargo build --release
 cargo xtask bundle gain_knob --release
 ```
 

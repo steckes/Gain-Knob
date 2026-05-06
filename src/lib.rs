@@ -131,6 +131,12 @@ impl Plugin for GainKnob {
                             component.get_prevent_key_event_propagation(),
                         );
 
+                        // Drive UI scale from the host's logical window size (avoids
+                        // Slint binding-loop warnings and HiDPI ambiguity).
+                        let (w, h) = params.editor_state.size();
+                        let scale = (w as f32 / 300.0).min(h as f32 / 360.0);
+                        component.set_scale(scale);
+
                         // Plugin -> UI: sync gain knob position
                         component.set_gain_value(params.gain.unmodulated_normalized_value());
 

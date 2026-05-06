@@ -1,0 +1,5 @@
+[target.x86_64-unknown-linux-gnu]
+pre-build = [
+    "apt-get update",
+    "apt-get install --assume-yes --no-install-recommends libfontconfig1-dev libxcb1-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev libxcb-icccm4-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev libx11-dev libx11-xcb-dev libxext-dev libxrandr-dev libxi-dev libxcursor-dev libxrender-dev libwayland-dev libegl1-mesa-dev libgl1-mesa-dev libasound2-dev libjack-jackd2-dev libpulse-dev"
+]

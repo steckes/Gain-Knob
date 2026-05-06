@@ -1,7 +1,7 @@
 [package]
 name = "gain_knob"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 
 [workspace]
 members = ["xtask"]
@@ -14,8 +14,8 @@ crate-type = ["cdylib"]
 slint-build = "=1.15.1"
 
 [dependencies]
-nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git" }
-nih_plug_xtask = { git = "https://github.com/robbert-vdh/nih-plug.git" }
-nih_plug_slint = { git = "https://github.com/aidan729/nih-plug-slint" }
+nih_plug = { git = "https://github.com/robbert-vdh/nih-plug.git", rev = "28b149ec4d62757d0b448809148a0c3ca6e09a95" }
+nih_plug_xtask = { git = "https://github.com/robbert-vdh/nih-plug.git", rev = "28b149ec4d62757d0b448809148a0c3ca6e09a95" }
+nih_plug_slint = { git = "https://github.com/steckes/nih-plug-slint", rev = "e0977a98af4c2793532706e7636b0555bbe8e3d7" }
 slint = { version = "=1.15.1", default-features = false, features = ["std", "renderer-femtovg", "raw-window-handle-06", "compat-1-2"] }
 serde = { version = "1.0", features = ["derive"] }

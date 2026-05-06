@@ -402,7 +402,7 @@ checksum = "72b3254f16251a8381aa12e40e3c4d2f0199f8c6508fbecb9d91f575e0fbb8c6"
 [[package]]
 name = "baseview"
 version = "0.1.0"
-source = "git+https://github.com/RustAudio/baseview.git#fd3c9dcf806cd38c83dfa94e70005c547af8764c"
+source = "git+https://github.com/RustAudio/baseview.git?rev=fd3c9dcf806cd38c83dfa94e70005c547af8764c#fd3c9dcf806cd38c83dfa94e70005c547af8764c"
 dependencies = [
  "cocoa",
  "core-foundation",
@@ -2823,7 +2823,7 @@ dependencies = [
 [[package]]
 name = "nih_plug"
 version = "0.0.0"
-source = "git+https://github.com/robbert-vdh/nih-plug.git#28b149ec4d62757d0b448809148a0c3ca6e09a95"
+source = "git+https://github.com/robbert-vdh/nih-plug.git?rev=28b149ec4d62757d0b448809148a0c3ca6e09a95#28b149ec4d62757d0b448809148a0c3ca6e09a95"
 dependencies = [
  "anyhow",
  "anymap3",
@@ -2853,7 +2853,7 @@ dependencies = [
 [[package]]
 name = "nih_plug_derive"
 version = "0.1.0"
-source = "git+https://github.com/robbert-vdh/nih-plug.git#28b149ec4d62757d0b448809148a0c3ca6e09a95"
+source = "git+https://github.com/robbert-vdh/nih-plug.git?rev=28b149ec4d62757d0b448809148a0c3ca6e09a95#28b149ec4d62757d0b448809148a0c3ca6e09a95"
 dependencies = [
  "proc-macro2",
  "quote",
@@ -2863,7 +2863,7 @@ dependencies = [
 [[package]]
 name = "nih_plug_slint"
 version = "0.1.1"
-source = "git+https://github.com/aidan729/nih-plug-slint#24e91bd2e7aa1d49d5af7336a92c5317225c90c7"
+source = "git+https://github.com/steckes/nih-plug-slint?rev=e0977a98af4c2793532706e7636b0555bbe8e3d7#e0977a98af4c2793532706e7636b0555bbe8e3d7"
 dependencies = [
  "baseview",
  "crossbeam",
@@ -2879,7 +2879,7 @@ dependencies = [
 [[package]]
 name = "nih_plug_xtask"
 version = "0.1.0"
-source = "git+https://github.com/robbert-vdh/nih-plug.git#28b149ec4d62757d0b448809148a0c3ca6e09a95"
+source = "git+https://github.com/robbert-vdh/nih-plug.git?rev=28b149ec4d62757d0b448809148a0c3ca6e09a95#28b149ec4d62757d0b448809148a0c3ca6e09a95"
 dependencies = [
  "anyhow",
  "cargo_metadata",
